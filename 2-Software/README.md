@@ -30,7 +30,7 @@ NOTE: You will need to configure every XCode project you by following step 2 if 
 ..c.	Add the path to the folder you want to use.
 This is where all the images/videos will be saved and accessed from.
 
-LINUX (Ubuntu 14.04):
+**LINUX (Ubuntu 14.04):**
 
 This was the operating system we used for the Jetson TKI. OpenCV was installed during the initial flashing on the OS. 
   **NOTE:** We this was OpenCV 2.4.8 and some functions differ from 3.0.0.
