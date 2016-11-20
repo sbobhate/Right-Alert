@@ -1,5 +1,6 @@
 # Right-Alert
 A Collection of the Documentation for my Senior Design Project
+**NOTE:** My work is under in the **2-Software** folder. The README file in that folder provides a description of how to run the software and install libraries the code is dependent on.
 
 ## The Team
 
