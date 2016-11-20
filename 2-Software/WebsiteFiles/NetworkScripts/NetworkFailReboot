@@ -1,0 +1,16 @@
+#!/bin/sh
+
+HOSTS="google.com"
+
+for myHost in $HOSTS
+do
+  count=$(nmap -sP --max-retries=10 --host-timeout=500ms 10.0.0.1 | grep '1 host up' | wc -l)
+  #count=$(sudo fping -c1 -t1000 google.com | grep "0% lost" | wc -l)
+	#wget -q --tries=15 --timeout=20 --spider http://google.com
+	if [ $count -eq 0 ]
+		then
+			sudo reboot
+		else
+			echo "Host : $myHost is up"
+	fi
+done

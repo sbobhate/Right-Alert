@@ -1,0 +1,21 @@
+#!/bin/sh
+
+HOSTS="google.com"
+
+for myHost in $HOSTS
+do
+  count=$(nmap -sP --max-retries=2 --host-timeout=500ms 10.0.0.1 | grep '1 host up' | wc -l)
+  #count=$(sudo fping -c1 -t1000 google.com | grep "0% lost" | wc -l)
+	#wget -q --tries=10 --timeout=20 --spider http://google.com
+	if [ $count -eq 0 ]
+		then
+			echo "Host : $myHost is down (ping failed) at $(date)"
+			sudo stop network-manager
+			sudo start network-manager
+			sleep 5		
+			sudo /home/ubuntu/Desktop/bandhan/SQL-Scripts/RightAlertHealthCheck-SQL 
+			sudo ~/duckdns/duck.sh >/dev/null 2>&1
+		else
+			echo "Host : $myHost is up"
+	fi
+done

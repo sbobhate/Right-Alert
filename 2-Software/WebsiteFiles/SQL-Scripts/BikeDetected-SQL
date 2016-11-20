@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo "
+USE rightalertdb
+GO
+INSERT INTO activity (\"Sender\",\"Status\")
+VALUES ('RightAlert','Biker detected')
+GO
+INSERT INTO rightalertmaster (\"Detection Distance\")
+VALUES (15)
+GO
+exit
+" > tempfile
+
+TDSVER=7.0 tsql -H 52.86.93.112 -p 1433 -U rightalert -P savingL1v3s < tempfile
+
+exit
