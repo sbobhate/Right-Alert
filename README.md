@@ -26,12 +26,12 @@ Our system uses an Nvidia Jetson TK1 as the primary processor. It uses a wide an
     ![alt tag](https://raw.githubusercontent.com/sbobhate/Right-Alert/master/Resources/Right%20Alert%20Block%20Diagram%20Final.jpg)
 
 **The interior of our system:**  
-    ![](https://github.com/sbobhate/Right-Alert/blob/master/Resources/interior.png)
+    ![alt tag](https://raw.githubusercontent.com/sbobhate/Right-Alert/master/Resources/interior.png)
 
 ## Results
 
 **We were successful in mounting the system on our campus and collect data to train the classification algorithm and run tests:**  
-    ![](https://github.com/sbobhate/Right-Alert/blob/master/Resources/setup.jpg)
+    ![alt tag](https://raw.githubusercontent.com/sbobhate/Right-Alert/master/Resources/setup.jpg)
 
 **A collection of images:**  
-    ![](https://github.com/sbobhate/Right-Alert/blob/master/Resources/collage.png)
+    ![alt tag](https://raw.githubusercontent.com/sbobhate/Right-Alert/master/Resources/collage.png)
