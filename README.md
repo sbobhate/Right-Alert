@@ -23,7 +23,7 @@ In the city of Boston, where countless bikers share the same streets as cars eve
 Our system uses an Nvidia Jetson TK1 as the primary processor. It uses a wide angle camera with adjustable zoom and focus as the main method of vision. The system runs a Machine Learning algorithm that trains an SVM using HOG features of training images, and uses the resulting descriptor vector to classify bikes. The system is sustainable as it has a battery to power itself and a Solar Panel that provides sustainable recharging. The Alert Sign is a standardized traffic control sign, but with high-intensity flashing LEDs to command the driver’s attention. The system also collects data about the bike traffic and stores it in a database. The information is displayed to our website hosted on AWS, admin.rightalert.net.
 
 **System Block Diagram:**  
-    ![](https://github.com/sbobhate/Right-Alert/blob/master/Resources/Right%20Alert%20Block%20Diagram%20Final.jpg)
+    ![alt tag](https://raw.githubusercontent.com/sbobhate/Right-Alert/master/Resources/Right%20Alert%20Block%20Diagram%20Final.jpg)
 
 **The interior of our system:**  
     ![](https://github.com/sbobhate/Right-Alert/blob/master/Resources/interior.png)
