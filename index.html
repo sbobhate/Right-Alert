@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Right-alert : Senior Design Project">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Right-alert</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sbobhate/Right-Alert">View on GitHub</a>
+
+          <h1 id="project_title">Right-alert</h1>
+          <h2 id="project_tagline">Senior Design Project</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sbobhate/Right-Alert/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sbobhate/Right-Alert/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="right-alert" class="anchor" href="#right-alert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Right-Alert</h1>
+
+<p>A Collection of the Documentation for my Senior Design Project  </p>
+
+<p><strong>NOTE:</strong> My work is under in the <strong>2-Software</strong> folder. The README file in that folder provides a description of how to run the software and install libraries the code is dependent on.</p>
+
+<h2>
+<a id="the-team" class="anchor" href="#the-team" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Team</h2>
+
+<ul>
+<li><strong>Shantanu Bobhate</strong></li>
+<li><strong>Brian Tan</strong></li>
+<li><strong>Bandhan Zishanuzzaman</strong></li>
+<li><strong>John McCullough</strong></li>
+<li><strong>Teng Zhang</strong></li>
+</ul>
+
+<h2>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Motivation</h2>
+
+<p>In the city of Boston, where countless bikers share the same streets as cars every day, bike safety is of utmost importance. Unfortunately, each year there are numerous collisions between bicycles and cars and the results can be fatal. One of the most dangerous situations bikers find themselves in is when cars make right turns across the bike lane. Sometimes drivers fail to check their side-view mirrors before turning, and as a result crash into bikers. Our team, RightAlert, provides a solar-powered system to warn drivers of oncoming bikers when a collision like this is imminent. A camera detects bikers traveling down the bike lane while an LED-lit traffic alert sign functions as a visual cue for drivers letting them know of the oncoming bike traffic. The RightAlert system is an intuitive tool for all drivers turning at an intersection. RightAlert provides a website which displays real time data while the system is running. It also allows for remote administration of specific system settings. Our system rivals alternative technologies that dedicate themselves to warning only one vehicle and fail to log traffic information. We at RightAlert are making Boston a haven for both bikers and drivers and seek to further improve overall traffic research in the city by providing our findings.</p>
+
+<p><strong>Click to view the video on youtube:</strong><br>
+<a href="https://www.youtube.com/watch?v=Dha42Zwq1EA"><img src="https://img.youtube.com/vi/Dha42Zwq1EA/0.jpg" alt=""></a></p>
+
+<h2>
+<a id="technical-overview" class="anchor" href="#technical-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical Overview</h2>
+
+<p>Our system uses an Nvidia Jetson TK1 as the primary processor. It uses a wide angle camera with adjustable zoom and focus as the main method of vision. The system runs a Machine Learning algorithm that trains an SVM using HOG features of training images, and uses the resulting descriptor vector to classify bikes. The system is sustainable as it has a battery to power itself and a Solar Panel that provides sustainable recharging. The Alert Sign is a standardized traffic control sign, but with high-intensity flashing LEDs to command the driver’s attention. The system also collects data about the bike traffic and stores it in a database. The information is displayed to our website hosted on AWS, admin.rightalert.net.</p>
+
+<p><strong>System Block Diagram:</strong><br>
+    <img src="https://github.com/sbobhate/Right-Alert/blob/master/Resources/Right%20Alert%20Block%20Diagram%20Final.jpg" alt=""></p>
+
+<p><strong>The interior of our system:</strong><br>
+    <img src="https://github.com/sbobhate/Right-Alert/blob/master/Resources/interior.png" alt=""></p>
+
+<h2>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h2>
+
+<p><strong>We were successful in mounting the system on our campus and collect data to train the classification algorithm and run tests:</strong><br>
+    <img src="https://github.com/sbobhate/Right-Alert/blob/master/Resources/setup.jpg" alt=""></p>
+
+<p><strong>A collection of images:</strong><br>
+    <img src="https://github.com/sbobhate/Right-Alert/blob/master/Resources/collage.png" alt=""></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Right-alert maintained by <a href="https://github.com/sbobhate">sbobhate</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
